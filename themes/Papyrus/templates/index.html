@@ -17,20 +17,6 @@
     <li><a href="{{ link }}"><i class="fab fa-{{ name }} fa-lg" aria-hidden="true" target="_blank"
           rel="noopener noreferrer" title="{{ name }}"></i></a></li>
     {% endfor %}
-    {% if FEED_ALL_ATOM %}
-    <li><a href="{{ FEED_DOMAIN }}/
-                        {% if FEED_ALL_ATOM_URL %}{{ FEED_ALL_ATOM_URL }}{% else %}{{ FEED_ALL_ATOM }}{% endif %}"
-        type="application/atom+xml" title="{{ FEED_ALL_ATOM }}" rel="alternate"><i class="fa fa-rss fa-lg"
-          aria-hidden="true"></i></a>
-    </li>
-    {% endif %}
-    {% if FEED_ALL_RSS %}
-    <li><a href="{{ FEED_DOMAIN }}/
-                        {% if FEED_ALL_RSS_URL %}{{ FEED_ALL_RSS_URL }}{% else %}{{ FEED_ALL_RSS }}{% endif %}"
-        type="application/rss+xml" title="{{ FEED_ALL_RSS }}" rel="alternate"><i class="fa fa-rss fa-lg"
-          aria-hidden="true"></i></a>
-    </li>
-    {% endif %}
   </ul>
   {% endif %}
 </div>

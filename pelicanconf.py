@@ -27,17 +27,17 @@ here</a>
 """
 
 # Feed generation is usually not desired when developing
-FEED_ALL_ATOM = None
-CATEGORY_FEED_ATOM = None
-TRANSLATION_FEED_ATOM = None
-AUTHOR_FEED_ATOM = None
-AUTHOR_FEED_RSS = None
+# FEED_ALL_ATOM = None
+# CATEGORY_FEED_ATOM = None
+# TRANSLATION_FEED_ATOM = None
+# AUTHOR_FEED_ATOM = None
+# AUTHOR_FEED_RSS = None
 
 # Pelican Papyrus stuff
 THEME = "themes/Papyrus"
 THEME_STATIC_PATHS = ["static"]
 PLUGIN_PATHS = ["pelican-plugins"]
-PLUGINS = ["readtime", "neighbors", "pelican-toc"]
+PLUGINS = ["readtime", "neighbors", "pelican-toc", "render_math"]
 
 DISPLAY_PAGES_ON_MENU = True
 DIRECT_TEMPLATES = (
